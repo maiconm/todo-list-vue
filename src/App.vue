@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <Header />
-    <ToDoList />
+    <div class="container">
+      <ToDoList />
+      <div>Criar a lista vai aqui</div>
+    </div>
   </div>
 </template>
 
@@ -17,6 +20,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  .container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
 </style>
