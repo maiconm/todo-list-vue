@@ -3,7 +3,6 @@
     <Header />
     <div class="container">
       <ToDoList />
-      <div>Criar a lista vai aqui</div>
     </div>
   </div>
 </template>
@@ -24,8 +23,13 @@ export default {
   .container {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    place-items: center;
+  }
+
+  ul { width: 50% }
+
+  @media only screen and (max-width: 600px) {
+    ul { width: 100% }
   }
 
 </style>
