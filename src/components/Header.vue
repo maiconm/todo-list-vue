@@ -1,25 +1,25 @@
 <template>
   <nav>
     <div class="container">
-      <a
-        href="#"
+      <router-link
+        to="/"
         id="logo"
       >
         to do list
-      </a>
+      </router-link>
       <div class="float-right">
-        <a
-          href="#"
+        <router-link
+          to="/"
           class="menu"
         >
           Home
-        </a>
-        <a
-          href="#"
+        </router-link>
+        <router-link
+          to="nova-tarefa"
           class="menu"
         >
           Nova tarefa
-        </a>
+        </router-link>
       </div>
     </div>
   </nav>
