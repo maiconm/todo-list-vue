@@ -4,9 +4,16 @@
   </div>
   <ul v-else>
     <li v-for="tarefa in tarefas" :key="tarefa.descricao">
+      <button
+        @click="excluir(tarefa.descricao)"
+        :disabled="!tarefa.feito"
+      >
+        ✖ excluir
+      </button>
       <input
+        :checked="tarefa.feito"
         type="checkbox"
-        v-model="tarefa.feito"
+        @click="toggleTarefa(tarefa)"
       />
       {{ tarefa.descricao }}
     </li>
@@ -16,6 +23,14 @@
 <script>
   export default {
     props: ['tarefas'],
+    methods: {
+      excluir(tarefa) {
+        this.$emit('exclui', tarefa)
+      },
+      toggleTarefa(tarefa) {
+        this.$emit('toggleTarefa', tarefa)
+      }
+    }
   }
 </script>
 
