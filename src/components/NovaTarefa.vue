@@ -42,7 +42,7 @@
     },
     methods: {
       submitHandler() {
-        console.log('enviando', this.tarefa)
+        this.$emit('cadastroTarefa', this.tarefa)
       }
     },
   }
