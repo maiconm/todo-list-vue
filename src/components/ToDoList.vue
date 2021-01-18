@@ -15,15 +15,7 @@
 
 <script>
   export default {
-    data(){
-      return {
-        tarefas: [
-          {feito: true, descricao: 'fazer lição de casa'},
-          {feito: false, descricao: 'lavar as roupas'},
-          {feito: false, descricao: 'lavar o carro'},
-        ],
-      }
-    }
+    props: ['tarefas'],
   }
 </script>
 
