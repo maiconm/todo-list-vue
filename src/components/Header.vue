@@ -9,16 +9,30 @@
       </router-link>
       <div class="float-right">
         <router-link
+          v-slot="{ href, navigate, isExactActive }"
           to="/"
           class="menu"
         >
-          Home
+          <a
+            :href="href"
+            @click="navigate"
+            :class="[isExactActive && 'active']"
+          >
+            Home
+          </a>
         </router-link>
         <router-link
+          v-slot="{ href, navigate, isExactActive }"
           to="nova-tarefa"
           class="menu"
         >
-          Nova tarefa
+          <a
+            :href="href"
+            @click="navigate"
+            :class="[isExactActive && 'active']"
+          >
+            Nova tarefa
+          </a>
         </router-link>
       </div>
     </div>
@@ -42,6 +56,7 @@
     font-family: 'Courier New', Courier, monospace;
   }
   .menu {
+    text-decoration: none;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: .5em;
