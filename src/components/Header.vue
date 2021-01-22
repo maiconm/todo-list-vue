@@ -45,13 +45,20 @@
 </script>
 
 <style scoped>
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
   nav {
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     background-color: #1f223acc;
   }
   #logo {
     font-size: 1.25em;
-    color: #5fa05f;
+    color: #bd793a;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
   }
@@ -67,6 +74,6 @@
     float: right;
   }
   .menu.active {
-    color: #467e46;
+    color: #bd7c40;
   }
 </style>

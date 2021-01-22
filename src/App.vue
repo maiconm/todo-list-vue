@@ -54,7 +54,21 @@ export default {
   }
 </script>
 
-<style scoped>
+<style>
+  button {
+    border: 0;
+    border-radius: 0.25rem;
+    background: #1E88E5;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    cursor: pointer;
+  }
   .container {
     margin-top: 10px;
     display: grid;
