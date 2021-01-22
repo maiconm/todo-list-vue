@@ -35,12 +35,15 @@
 </script>
 
 <style scoped>
+  div {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
   ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-
   ul li {
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -49,15 +52,12 @@
     transition: 0.2s;
     user-select: none;
   }
-
   ul li:nth-child(odd) {
     background: #f9f9f9;
   }
-
   ul li:hover {
     background: #ddd;
   }
-
   ul li.checked {
     background: #888;
     color: #fff;

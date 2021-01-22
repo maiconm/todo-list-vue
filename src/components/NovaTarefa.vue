@@ -49,13 +49,11 @@
 </script>
 
 <style scoped>
-
   div {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
   }
-
   .error {
     color: red;
   }
-
 </style>
