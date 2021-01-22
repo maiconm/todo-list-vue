@@ -69,6 +69,9 @@ export default {
     margin: 0.25rem;
     cursor: pointer;
   }
+  button:disabled {
+    background-color: gray;
+  }
   .container {
     margin-top: 10px;
     display: grid;
