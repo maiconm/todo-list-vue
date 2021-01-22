@@ -8,6 +8,7 @@
           rules="required|max:20"
         >
           <input
+            :class="errors[0] && 'error'"
             v-model="tarefa"
             placeholder="ex.: lavar o carro"
             type="text"
@@ -55,5 +56,14 @@
   }
   .error {
     color: red;
+  }
+  input {
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    height: 22px;
+  }
+  input.error {
+    border-bottom: 2px solid red;
   }
 </style>
