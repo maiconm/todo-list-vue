@@ -73,7 +73,7 @@ export default {
     background-color: gray;
   }
   .container {
-    margin-top: 10px;
+    margin: 10px 8px 8px 8px;
     display: grid;
     place-items: center;
   }
